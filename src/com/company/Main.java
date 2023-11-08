@@ -14,7 +14,7 @@ public class Main {
 
         for (int i=0;i<numberBooks;i++) {
             Book b;
-            System.out.println("Enter book details: <book type-COMICS/CHILD_BOOK/REGULAR> <title> <author> <number of copies> <price>");
+            System.out.println("Enter book details: <book type-COMICS/CHILD_BOOK/BOOK> <title> <author> <number of copies> <price>");
             BookType type = BookType.valueOf(sc.next().toUpperCase());
             switch (type) {
                 case COMICS:
@@ -23,9 +23,12 @@ public class Main {
                 case CHILD_BOOK:
                     b = new ChildBook();
                     break;
-                    //default = case BOOK
+                case BOOK:
+                    b = new Book();
+                    break;
                 default: b = new Book();
             }
+
             BookType bookType = BookType.valueOf(sc.next().toUpperCase());
             b.setType(type);
             b.setTitle(sc.next());

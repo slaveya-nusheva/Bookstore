@@ -7,6 +7,14 @@ public class Bookstore extends Book{
     private List <Book> books = new ArrayList<>();
 
     public void sell(Book book){
-      // book.setNumAvailable(book.getNumAvailable()--);
+        int a;
+
+        if(book.getNumAvailable()!=0){
+            System.out.println(book.getTitle() + " by " + book.getAuthor() + " was sold for " + book.getPrice());
+        }
+        else System.out.println("Not available");
+
+        a = book.getNumAvailable();
+        book.setNumAvailable(a--);
     }
 }
