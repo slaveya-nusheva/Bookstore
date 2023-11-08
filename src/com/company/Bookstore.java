@@ -1,12 +1,12 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Bookstore {
-    private List <Book> books;
+public class Bookstore extends Book{
+    private List <Book> books = new ArrayList<>();
 
-    public double sell(Book b){
-        int a=b.getNumAvailable();
-        b.setNumAvailable();
+    public double sell(Book book){
+       return super.getNumAvailable();
     }
 }

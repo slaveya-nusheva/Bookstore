@@ -18,7 +18,7 @@ public class Main {
             BookType type = BookType.valueOf(sc.next().toUpperCase());
             switch (type) {
                 case COMICS:
-                    b = new Comics();
+                    b = new ComicBook();
                     break;
                 case CHILD_BOOK:
                     b = new ChildBook();
