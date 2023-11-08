@@ -6,7 +6,7 @@ import java.util.List;
 public class Bookstore extends Book{
     private List <Book> books = new ArrayList<>();
 
-    public double sell(Book book){
-       return super.getNumAvailable();
+    public void sell(Book book){
+      // book.setNumAvailable(book.getNumAvailable()--);
     }
 }

@@ -23,6 +23,7 @@ public class Main {
                 case CHILD_BOOK:
                     b = new ChildBook();
                     break;
+                    //default = case BOOK
                 default: b = new Book();
             }
             BookType bookType = BookType.valueOf(sc.next().toUpperCase());
