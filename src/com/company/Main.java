@@ -28,11 +28,10 @@ public class Main {
                     break;
                 default: b = new Book();
             }
-
-            BookType bookType = BookType.valueOf(sc.next().toUpperCase());
             b.setType(type);
             b.setTitle(sc.next());
             Author author=new Author();
+            author.setName(sc.next());
             b.setAuthor(author);
             b.setNumAvailable(sc.nextInt());
             b.setPrice(sc.nextDouble());
