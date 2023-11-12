@@ -45,7 +45,6 @@ public class Book {
         this.price = price;
     }
 
-    public double getPrice() {
-        return price;
-    }
+    public double getPrice() {return price;}
+
 }

@@ -36,6 +36,11 @@ public class Main {
             b.setNumAvailable(sc.nextInt());
             b.setPrice(sc.nextDouble());
             books.add(b);
+
+            Bookstore bookstore = new Bookstore(books);
+            if(i%2==1){
+                bookstore.sell(b);
+            }
         }
 
         sc.close();
